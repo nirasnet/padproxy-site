@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PadProxy – Support</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>PadProxy Support</h1>
+
+<h2>Getting started</h2>
+<ol>
+<li>Open PadProxy on your iPhone or iPad and tap <b>Start Proxy</b>. Allow local network access when asked.</li>
+<li>Join your Mac to the same Wi-Fi network (or to the device's Personal Hotspot).</li>
+<li>On the Mac, open <b>System Settings → Wi-Fi → Details… → Proxies</b> and turn on <b>Web proxy (HTTP)</b> and <b>Secure web proxy (HTTPS)</b> using the address and port shown in PadProxy.</li>
+<li>Keep PadProxy open with the screen on while you use it. iOS pauses apps that leave the screen.</li>
+</ol>
+
+<h2>Troubleshooting</h2>
+<ul>
+<li><b>The Mac can't connect:</b> check that both devices are on the same network, that Local Network access is on for PadProxy (Settings → Privacy &amp; Security → Local Network), and that the Wi-Fi doesn't isolate clients (common on guest networks). Personal Hotspot is a reliable alternative.</li>
+<li><b>Terminal tools ignore the proxy:</b> run <code>export https_proxy=http://&lt;address&gt;:&lt;port&gt; http_proxy=$https_proxy</code>.</li>
+<li><b>"Address already in use":</b> choose another port or wait a few seconds after stopping.</li>
+<li>If you share a work VPN connection this way, make sure your organization's policy allows it.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Open an issue at <a href="https://github.com/nirasnet/padproxy-site/issues">github.com/nirasnet/padproxy-site</a> and we'll get back to you.</p>
+<p><a href="privacy.html">Privacy Policy</a> · <a href="index.html">← PadProxy</a></p>
+</main>
+</body>
+</html>
